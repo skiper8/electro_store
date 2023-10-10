@@ -1,5 +1,3 @@
-from datetime import datetime
-
 from django.db import models
 
 NULLABLE: dict[str, bool] = {'blank': True, 'null': True}

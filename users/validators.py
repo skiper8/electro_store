@@ -31,5 +31,3 @@ class EmailValidator:
 
         if len(tmp_val) < 10:
             raise ValidationError('Длинна email не может быть меньше 5 символов')
-
-
