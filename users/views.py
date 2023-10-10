@@ -7,21 +7,25 @@ from users.serializers import UserSerializer, UserCreateSerializer, UserTokenObt
 
 from users.models import User
 
-""" CRUD для модели User """
-
 
 class UserListAPIView(ListAPIView):
+    """ List для модели User """
+
     queryset = User.objects.all()
     serializer_class = UserSerializer
     permission_classes = [IsStaff]
 
 
 class UserCreateAPIView(CreateAPIView):
+    """ Create для модели User """
+
     queryset = User.objects.all()
     serializer_class = UserCreateSerializer
 
 
 class UserRetrieveAPIView(RetrieveAPIView):
+    """ Retrieve для модели User """
+
     queryset = User.objects.all()
     serializer_class = UserRetrieveSerializer
     permission_classes = [IsAuthenticated, IsActive | IsSuperUser]
@@ -32,6 +36,8 @@ class UserRetrieveAPIView(RetrieveAPIView):
 
 
 class UserUpdateAPIView(UpdateAPIView):
+    """ Update для модели User """
+
     queryset = User.objects.all()
     serializer_class = UserUpdateSerializer
     permission_classes = [IsAuthenticated, IsActive]
@@ -42,6 +48,8 @@ class UserUpdateAPIView(UpdateAPIView):
 
 
 class UserDestroyAPIView(DestroyAPIView):
+    """ Destroy для модели User """
+
     queryset = User.objects.all()
     serializer_class = UserSerializer
     permission_classes = [IsAuthenticated, IsActive]
