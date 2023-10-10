@@ -1,0 +1,53 @@
+[
+  {
+    "model": "product.manufacturer",
+    "pk": 1,
+    "fields": {
+      "company_name": "ЭнергоМашСтрой",
+      "status": "FACTORY",
+      "contact_email": "energomashstroy@sky.pro",
+      "country": "Россия",
+      "city": "Ярославль",
+      "street": "Советская",
+      "home_number": "45А"
+    }
+  },
+  {
+    "model": "product.manufacturer",
+    "pk": 2,
+    "fields": {
+      "company_name": "ИП Петров",
+      "status": "IE",
+      "contact_email": "petrovpetrov@sky.pro",
+      "country": "Россия",
+      "city": "Москва",
+      "street": "Тверская",
+      "home_number": "95"
+    }
+  },
+  {
+    "model": "product.manufacturer",
+    "pk": 3,
+    "fields": {
+      "company_name": "М.техника",
+      "status": "RETAIL",
+      "contact_email": "mtech@sky.pro",
+      "country": "Россия",
+      "city": "Тверь",
+      "street": "Московская",
+      "home_number": "13/1"
+    }
+  },
+  {
+    "model": "product.orders",
+    "pk": 1,
+    "fields": {
+      "product_name": "стройматериалы",
+      "product_model": "Стальной лист 1x1",
+      "release_date": "2023-10-10",
+      "supplier": 1,
+      "debt": "0.00",
+      "create_date": "2023-10-10T20:04:35Z"
+    }
+  }
+]
